@@ -106,10 +106,10 @@ Example: `docker push myDockerID/myservice:1`
 kubectl get nodes
 ```
 ```
-kubectl create deployment myservice --image=efrei/myservice:1
+kubectl create deployment myservice --image=lgdf/myservice:1
 ```
 
-The image used comes from the Docker hub: https://hub.docker.com/r/efrei/myservice/tags
+The image used comes from the Docker hub: https://hub.docker.com/r/ldgf/myservice/tags
 
 But you can use your own image instead.
 
