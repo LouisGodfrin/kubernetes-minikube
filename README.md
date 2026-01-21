@@ -379,3 +379,18 @@ kubectl delete services myservice
 kubectl delete deployment myservice
 ```
 
+## Simple Kubernetes Deployment
+The project is configured to use a custom Docker image hosted on Docker Hub.
+
+**Image utilisée :** `lgdf/myservice:1`
+
+### Commandes pour déployer :
+1. Apply configuration :
+   ```bash
+   kubectl apply -f myservice-deployment.yml
+   kubectl apply -f myservice-loadbalancing-service.yml
+   
+2.Accéder à l'application (sous Minikube) :
+
+```bash
+minikube service myservice
