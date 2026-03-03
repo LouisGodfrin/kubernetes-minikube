@@ -13,7 +13,7 @@ spec:
         app: myservice2
     spec:
       containers:
-        - image: lgdf/myservice2:1
+        - image: lgdf/myservice2:2
           imagePullPolicy: IfNotPresent
           name: myservice2
       restartPolicy: Always
