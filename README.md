@@ -106,10 +106,10 @@ Example: `docker push myDockerID/myservice:1`
 kubectl get nodes
 ```
 ```
-kubectl create deployment myservice --image=efrei/myservice:1
+kubectl create deployment myservice --image=lgdf/myservice:1
 ```
 
-The image used comes from the Docker hub: https://hub.docker.com/r/efrei/myservice/tags
+The image used comes from the Docker hub: https://hub.docker.com/r/ldgf/myservice/tags
 
 But you can use your own image instead.
 
@@ -379,3 +379,18 @@ kubectl delete services myservice
 kubectl delete deployment myservice
 ```
 
+## Simple Kubernetes Deployment
+The project is configured to use a custom Docker image hosted on Docker Hub.
+
+**Image utilisée :** `lgdf/myservice:1`
+
+### Commandes pour déployer :
+1. Apply configuration :
+   ```bash
+   kubectl apply -f myservice-deployment.yml
+   kubectl apply -f myservice-loadbalancing-service.yml
+   
+2.Accéder à l'application (sous Minikube) :
+
+```bash
+minikube service myservice
